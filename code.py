@@ -1,0 +1,5 @@
+import web
+
+urls = (
+	'/', 'index'
+)
