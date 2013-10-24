@@ -21,7 +21,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Simple English Parser</h1>
-        <p>Simple English Parser a tool to check if your writing is easy to understand. Paste in to the box below and press the button. Then you will get a score. Simple English Parser uses the <a href="#">Basic English Language</a> developed by Charles Kay Ogden. You can find more about him <a href="#">here.</a></p>
+        <p>Simple English Parser a tool to check if your writing is easy to understand. Put your text in to the box below and press the button. Then you will get a score. Simple English Parser uses the <a href="#">Basic English Language</a> developed by Charles Kay Ogden. You can find more about him <a href="#">here.</a></p>
       </div>
     </div>
 
@@ -29,11 +29,15 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-8">
-          <h2>Text</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details »</a></p>
+          <h2>Put your text here:</h2>
+          <form role="form">
+            <div class="form-group">
+              <textarea id="form-input" class="form-control" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom btn-lg">View details »</button>
+          </form>
         </div>
-        <div class="col-lg-4">
+        <div id="result-column" class="col-lg-4">
           <h2>Result</h2>
           <p class="result-percent">70%</p>
           <p>Your English is about 70% simple.</p>
